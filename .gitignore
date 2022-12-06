@@ -27,3 +27,6 @@ Manifest.toml
 residual files/
 references/
 mathematica/
+
+# vscode
+.vscode
