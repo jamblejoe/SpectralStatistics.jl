@@ -1,5 +1,3 @@
-include("brody.jl")
-include("goe.jl")
 
 struct BerryRobnik <: Model end
 

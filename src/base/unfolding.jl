@@ -1,15 +1,10 @@
-include("datasample.jl")
 
-using Polynomials
-using LsqFit
-
-
-function unfold_spectrum(spect::DataSample, f::Function ) #f is the unfolding function
+function unfold(spect::DataSample, f::Function ) #f is the unfolding function
     unfolded = @. f(spect.data)
     return UnfoldedSpectrum(unfolded)
 end
 
-function unfold_spectrum(spect::DataSample, n::Int ) #f is the unfolding function
+function unfold(spect::DataSample, n::Int ) #f is the unfolding function
     coeffs = fit_integrated_density(spect, n)
     unfolded = [evalpoly(x, coeffs) for x in spect.data]
     return UnfoldedSpectrum(unfolded)

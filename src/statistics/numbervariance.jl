@@ -1,7 +1,3 @@
-include("../base/probability.jl")
-include("../base/datasample.jl")
-
-using StatsBase
 
 function number_variance(E, L)
     #algorithm by Tomaz Prosen

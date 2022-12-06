@@ -1,5 +1,3 @@
-include("brody.jl")
-using SpecialFunctions 
 
 struct BerryRobnikBrody <: Model end
 

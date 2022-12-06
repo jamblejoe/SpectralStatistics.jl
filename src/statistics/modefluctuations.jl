@@ -1,7 +1,3 @@
-include("../base/probability.jl")
-include("../base/datasample.jl")
-
-using StatsBase
 
 function mode_fluctuations(spect::UnfoldedSpectrum)
     e = spect.data

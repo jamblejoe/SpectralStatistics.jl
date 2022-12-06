@@ -1,4 +1,4 @@
-using SpecialFunctions 
+using Base.MathConstants
 
 struct Gamma <: Model end
 #Gamma distributions of Bogomolny and Giraud

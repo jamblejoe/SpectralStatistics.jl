@@ -1,4 +1,6 @@
-abstract type DataSample  end
+
+abstract type DataSample end
+
 
 struct Spectrum <: DataSample
     data::Vector
@@ -19,3 +21,10 @@ end
 struct SpectralEnsemble 
     data::Vector{T} where T<:DataSample
 end 
+
+
+#=
+struct UnfoldedSpectrum{T}
+    data::T
+end
+=#

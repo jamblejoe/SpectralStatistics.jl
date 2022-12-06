@@ -1,5 +1,3 @@
-using LsqFit
-using InteractiveUtils
 
 function fit_model(spectrum, model, statistic::T, var) where T<: Function
     x, y = statistic(spectrum, var)
